@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');/* CSS Document */
+
+
+/* Reset */
+body {
+  margin: 0;
+  padding: 0;
+  background: #000000 url("../img/Fundo.webp") center/cover no-repeat !important;
+}
+/* Reset */
+
+/* Conteúdo */
+img.crescimento {
+  display: block;
+  margin: 0 auto; 
+  width: 30%;
+  margin-top: 100px;
+}
+img.Headline {
+  clear: both;
+  display: block;
+  width: 70%;
+  margin: 10px auto 15px auto;
+}
+section.conteudo h1 {
+	text-align: center;
+  font-size: 24px;
+  font-weight: 900;
+  color: #fff;
+  margin: 45px auto -30px auto;
+  font-family: 'Poppins', sans-serif;
+}
+section.conteudo h2 {
+	text-align: center;
+  font-size: 45px;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+  margin: 45px auto 0px auto;
+  font-family: 'Poppins', sans-serif;
+}
+section.conteudo h2 span {
+	text-align: center;
+  font-size: 45px;
+  font-weight: 700;
+  color: #DBFF00;
+  text-transform: uppercase;
+  font-family: 'Poppins', sans-serif;
+}
+section.conteudo h3 {
+	text-align: center;
+  font-size: 32px;
+  font-weight: 300;
+  color: #fff;
+  margin: 45px auto 0px auto;
+}
+section.conteudo h3 a {
+	text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+}
+section.conteudo h3 b {
+	text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  color: #DBFF00;
+}
+section.conteudo h4 {
+	text-align: center;
+  font-size: 32px;
+  font-weight: 900;
+  color: #fff;
+  text-transform: uppercase;
+  margin: 45px auto 15px auto;
+  font-family: 'Poppins', sans-serif;
+}
+section.conteudo h4 span {
+	text-align: center;
+  color: #DBFF00;
+}
+section.conteudo h5 {
+	text-align: center;
+  font-size: 32px;
+  font-weight: 600;
+  color: #fff;
+  margin: 45px auto 15px auto;
+  font-family: 'Poppins', sans-serif;
+}
+section.conteudo h5 span {
+	text-align: center;
+  color: #DBFF00;
+}
+section.conteudo h5 a {
+	text-align: center;
+  font-weight: 300;
+}
+section.conteudo h6 {
+	text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  color: #fff;
+  margin: -10px auto 30px auto;
+  font-family: 'Poppins', sans-serif;
+}
+a.cta {
+  clear: both;
+  display: block;
+  text-align: center;
+  background: #DBFF00;
+  color: #000000;
+  text-decoration: none;
+  font-size: 40px;
+  font-weight: 800;
+  padding: 15px 0;
+  width: 60%;
+  margin: 50px auto 100px auto; 
+  border-radius: 8px;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  box-shadow: 0px 0px 15px 5px #DBFF00; 
+  font-family: 'Poppins', sans-serif;
+}
+.pulsr {
+  animation-name: pulse;
+  -webkit-animation-name: pulse;
+  animation-duration: 1.5s;
+  -webkit-animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+}
+@keyframes pulse{
+0%,100%{transform:scale(.9);opacity:.9;}
+50%{transform:scale(1);opacity:1;}
+}
+@-webkit-keyframes pulse{
+0%,100%{-webkit-transform:scale(.95);opacity:.7}
+50%{-webkit-transform:scale(1);opacity:1}
+}
+img.dr {
+  clear: both;
+  display: block;
+  width: 12%;
+  margin: 40px auto 35px auto;
+  border-radius: 50px 50px 50px 50px;
+  -moz-border-radius: 50px 50px 50px 50px;
+  -webkit-border-radius: 50px 50px 50px 50px;
+}
+img.bt {
+  clear: both;
+  display: block;
+  width: 50%;
+  margin: 0 auto;
+  padding: 16px 0;
+}
+/* Conteúdo */
+
+/* Rodapé */
+footer.footer {
+	padding: 35px 0;
+	margin: 100px auto 50 auto;
+}
+footer.footer p {
+	text-align: center;
+	font-size: 15px;
+  font-weight: 100;
+  color: #ffffff7a;
+  font-family: 'Poppins', sans-serif;
+}
+/* Rodapé */
+
+/* Responsivo */
+@media only screen and (max-width: 768px) {
+body {
+background: #000000 url("../img/Fundo-Celular.webp") 50% 0 no-repeat !important;
+}
+img.crescimento {
+  width: 50%;
+  margin: 80px auto 5px auto;
+}
+section.conteudo h1 {
+font-size: 16px;
+margin: 40px auto -48px auto;
+}
+section.conteudo h2 {
+font-size: 32px;
+margin: 50px auto -20px auto;
+}
+section.conteudo h3 {
+font-size: 18px;
+margin: 50px auto -20px auto;
+}
+section.conteudo h4 {
+font-size: 16px;
+margin: 50px auto -20px auto;
+}
+section.conteudo h3 a {
+font-size: 18px;
+}
+section.conteudo h3 b {
+font-size: 18px;
+}
+section.conteudo h5 {
+font-size: 16px;
+}
+section.conteudo h6 {
+font-size: 14px;
+margin: -20px auto 20px auto;
+}
+a.cta {
+width: 80%;
+font-size: 20px;
+padding: 16px 0;
+}
+img.bt {
+width: 50%;
+padding: 5px 0;
+}
+footer.footer p {
+font-size: 10px;
+}
+}
+/* Responsivo */
+
