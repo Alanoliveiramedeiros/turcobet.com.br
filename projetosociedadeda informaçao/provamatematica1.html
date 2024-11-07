@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prova de Geometria Plana</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #1a1a2e;
+            color: #e0e0e0;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .question-container {
+            background-color: #0f3460;
+            padding: 20px;
+            margin: 15px 0;
+            border-left: 4px solid #e94560;
+            width: 80%;
+            max-width: 700px;
+            border-radius: 8px;
+        }
+        .question-container h3 {
+            color: #e0e0e0;
+        }
+        .question-container label {
+            font-size: 1.1em;
+            color: #b3b3b3;
+        }
+        .result {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .btn-container {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .button {
+            padding: 10px 20px;
+            background-color: #fff;
+            color: #1a1a2e;
+            border: 2px solid #1a1a2e;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1em;
+            text-align: center;
+            transition: background-color 0.3s ease;
+        }
+        .button:hover {
+            background-color: #e94560;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Prova de Geometria Plana</h1>
+    <p>Responda às perguntas e, ao final, verifique seu desempenho.</p>
+</header>
+
+<form id="quiz-form">
+    <div class="question-container">
+        <h3>1. Qual é a área de um retângulo com 6 m de largura e 4 m de altura?</h3>
+        <label><input type="radio" name="q1" value="10"> 10 m²</label><br>
+        <label><input type="radio" name="q1" value="24"> 24 m²</label><br>
+        <label><input type="radio" name="q1" value="20"> 20 m²</label><br>
+        <label><input type="radio" name="q1" value="30"> 30 m²</label><br>
+        <label><input type="radio" name="q1" value="15"> 15 m²</label>
+    </div>
+
+    <div class="question-container">
+        <h3>2. Qual é o perímetro de um triângulo com lados de 5 cm, 7 cm e 10 cm?</h3>
+        <label><input type="radio" name="q2" value="22"> 22 cm</label><br>
+        <label><input type="radio" name="q2" value="20"> 20 cm</label><br>
+        <label><input type="radio" name="q2" value="25"> 25 cm</label><br>
+        <label><input type="radio" name="q2" value="15"> 15 cm</label><br>
+        <label><input type="radio" name="q2" value="18"> 18 cm</label>
+    </div>
+
+    <div class="question-container">
+        <h3>3. Qual é a área de um triângulo com base 8 cm e altura 5 cm?</h3>
+        <label><input type="radio" name="q3" value="20"> 20 cm²</label><br>
+        <label><input type="radio" name="q3" value="30"> 30 cm²</label><br>
+        <label><input type="radio" name="q3" value="40"> 40 cm²</label><br>
+        <label><input type="radio" name="q3" value="15"> 15 cm²</label><br>
+        <label><input type="radio" name="q3" value="25"> 25 cm²</label>
+    </div>
+
+    <div class="question-container">
+        <h3>4. Qual é o comprimento da circunferência de um círculo com raio 7 cm? (Use π ≈ 3,14)</h3>
+        <label><input type="radio" name="q4" value="44"> 44 cm</label><br>
+        <label><input type="radio" name="q4" value="21.98"> 21.98 cm</label><br>
+        <label><input type="radio" name="q4" value="22"> 22 cm</label><br>
+        <label><input type="radio" name="q4" value="43.96"> 43.96 cm</label><br>
+        <label><input type="radio" name="q4" value="42"> 42 cm</label>
+    </div>
+
+    <div class="question-container">
+        <h3>5. Qual é a área de um círculo com raio 5 cm? (Use π ≈ 3,14)</h3>
+        <label><input type="radio" name="q5" value="31.4"> 31,4 cm²</label><br>
+        <label><input type="radio" name="q5" value="78.5"> 78,5 cm²</label><br>
+        <label><input type="radio" name="q5" value="25"> 25 cm²</label><br>
+        <label><input type="radio" name="q5" value="50"> 50 cm²</label><br>
+        <label><input type="radio" name="q5" value="15.7"> 15,7 cm²</label>
+    </div>
+
+    <div class="question-container">
+        <h3>6. Um quadrado tem lado de 4 cm. Qual é sua área?</h3>
+        <label><input type="radio" name="q6" value="8"> 8 cm²</label><br>
+        <label><input type="radio" name="q6" value="12"> 12 cm²</label><br>
+        <label><input type="radio" name="q6" value="16"> 16 cm²</label><br>
+        <label><input type="radio" name="q6" value="24"> 24 cm²</label><br>
+        <label><input type="radio" name="q6" value="20"> 20 cm²</label>
+    </div>
+
+    <div class="question-container">
+        <h3>7. Qual é o perímetro de um quadrado com lado de 6 cm?</h3>
+        <label><input type="radio" name="q7" value="18"> 18 cm</label><br>
+        <label><input type="radio" name="q7" value="12"> 12 cm</label><br>
+        <label><input type="radio" name="q7" value="24"> 24 cm</label><br>
+        <label><input type="radio" name="q7" value="30"> 30 cm</label><br>
+        <label><input type="radio" name="q7" value="36"> 36 cm</label>
+    </div>
+
+    <div class="question-container">
+        <h3>8. Qual é a área de um triângulo com base 10 cm e altura 8 cm?</h3>
+        <label><input type="radio" name="q8" value="30"> 30 cm²</label><br>
+        <label><input type="radio" name="q8" value="40"> 40 cm²</label><br>
+        <label><input type="radio" name="q8" value="80"> 80 cm²</label><br>
+        <label><input type="radio" name="q8" value="50"> 50 cm²</label><br>
+        <label><input type="radio" name="q8" value="60"> 60 cm²</label>
+    </div>
+
+    <div class="question-container">
+        <h3>9. Qual é o comprimento da circunferência de um círculo com diâmetro de 10 cm? (Use π ≈ 3,14)</h3>
+        <label><input type="radio" name="q9" value="20"> 20 cm</label><br>
+        <label><input type="radio" name="q9" value="15.7"> 15,7 cm</label><br>
+        <label><input type="radio" name="q9" value="31.4"> 31,4 cm</label><br>
+        <label><input type="radio" name="q9" value="25"> 25 cm</label><br>
+        <label><input type="radio" name="q9" value="50"> 50 cm</label>
+    </div>
+
+    <div class="question-container">
+        <h3>10. Um retângulo tem largura de 7 cm e altura de 3 cm. Qual é seu perímetro?</h3>
+        <label><input type="radio" name="q10" value="21"> 21 cm</label><br>
+        <label><input type="radio" name="q10" value="14"> 14 cm</label><br>
+        <label><input type="radio" name="q10" value="18"> 18 cm</label><br>
+        <label><input type="radio" name="q10" value="20"> 20 cm</label><br>
+        <label><input type="radio" name="q10" value="30"> 30 cm</label>
+    </div>
+
+    <div class="btn-container">
+        <button type="button" onclick="checkAnswers()" class="button">Enviar Prova</button>
+    </div>
+</form>
+
+<div id="result" class="result"></div>
+
+<script>
+    const answers = {
+        q1: "24",
+        q2: "22",
+        q3: "20",
+        q4: "43.96",
+        q5: "78.5",
+        q6: "16",
+        q7: "24",
+        q8: "40",
+        q9: "31.4",
+        q10: "20"
+    };
+
+    function checkAnswers() {
+        const form = document.getElementById('quiz-form');
+        let correctAnswers = 0;
+        let incorrectQuestions = [];
+
+        for (const [question, answer] of Object.entries(answers)) {
+            const userAnswer = form[question].value;
+            if (userAnswer === answer) {
+                correctAnswers++;
+            } else {
+                incorrectQuestions.push(`Questão ${question.slice(1)} - Resposta correta: ${answer}`);
+            }
+        }
+
+        const resultDiv = document.getElementById('result');
+        resultDiv.innerHTML = `
+            <h2>Você acertou ${correctAnswers} de ${Object.keys(answers).length} questões.</h2>
+            ${incorrectQuestions.length ? '<h3>Questões incorretas:</h3><ul>' + incorrectQuestions.map(q => `<li>${q}</li>`).join('') + '</ul>' : ''}
+            <div class="btn-container">
+                <button onclick="location.href='conteudomatematica1.html'" class="button">Voltar para o Conteúdo</button>
+            </div>
+        `;
+    }
+</script>
+
+</body>
+</html>

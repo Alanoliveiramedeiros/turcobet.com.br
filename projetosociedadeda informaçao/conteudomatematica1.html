@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introdução à Geometria Plana</title>
+    <style>
+        body {
+            padding-left: 40px;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #1a1a2e;
+            color: #e0e0e0;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        h1, h2, h3 {
+            color: #e0e0e0;
+        }
+        p, ul li {
+            font-size: 1.2em;
+            color: #b3b3b3;
+        }
+        .example {
+            background-color: #0f3460;
+            padding: 20px;
+            border-left: 4px solid #e94560;
+            margin: 20px 0;
+            border-radius: 8px;
+            width: 80%;
+            max-width: 700px;
+        }
+        ul {
+            margin: 10px 0;
+        }
+        ul li {
+            margin-bottom: 5px;
+        }
+        h2, h3 {
+            margin-top: 20px;
+            margin-bottom: 10px;
+            color: #e94560;
+        }
+        .button {
+            display: inline-block;
+            margin-bottom: 30px;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            background-color: #fff;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+            border: 2px solid black;
+            width: 250px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Introdução à Geometria Plana</h1>
+    </header>
+    <p>A geometria plana é o estudo de figuras e formas bidimensionais, ou seja, aquelas que possuem comprimento e largura, mas não possuem profundidade. Essa área da matemática nos permite entender e calcular comprimentos, áreas e ângulos em figuras como linhas, ângulos, polígonos e círculos. Esses conceitos são amplamente aplicados em campos que vão desde a construção civil até o design e a arte.</p>
+
+    <h2>1. Pontos e Linhas</h2>
+    <p><strong>Ponto:</strong> Um ponto é uma posição exata em um plano e é representado por uma letra maiúscula, como "A". Apesar de sua importância, um ponto não possui dimensões; ele é apenas uma localização.</p>
+    <p><strong>Linha:</strong> Uma linha é uma sequência infinita de pontos alinhados. Existem três tipos principais:</p>
+    <ul>
+        <li><strong>Reta:</strong> Uma linha infinita que se estende em ambas as direções, representando o conceito de continuidade no espaço.</li>
+        <li><strong>Segmento de Reta:</strong> Uma porção de reta que possui um ponto inicial e um ponto final, sendo, portanto, finita.</li>
+        <li><strong>Semirreta:</strong> Inicia em um ponto específico e se estende infinitamente em uma direção.</li>
+    </ul>
+
+    <h2>2. Ângulos</h2>
+    <p>Ângulos são formados pela interseção de duas linhas em um ponto comum, chamado <strong>vértice</strong>. São medidos em graus (°), e cada tipo de ângulo possui características específicas:</p>
+    <ul>
+        <li><strong>Ângulo reto:</strong> Mede exatamente 90°, formando uma cruz entre as duas linhas.</li>
+        <li><strong>Ângulo agudo:</strong> Menor que 90°, representa uma abertura menor, comum em triângulos.</li>
+        <li><strong>Ângulo obtuso:</strong> Maior que 90° e menor que 180°, sendo uma abertura mais ampla.</li>
+        <li><strong>Ângulo raso:</strong> Mede 180°, formando uma linha reta.</li>
+    </ul>
+
+    <h2>3. Polígonos</h2>
+    <p>Polígonos são figuras fechadas formadas por segmentos de reta, chamados de lados. Cada polígono é classificado de acordo com o número de lados:</p>
+    <ul>
+        <li><strong>Triângulo:</strong> Possui 3 lados e é o polígono mais simples.</li>
+        <li><strong>Quadrado e Retângulo:</strong> Possuem 4 lados. O quadrado possui todos os lados iguais, enquanto o retângulo possui lados opostos iguais.</li>
+        <li><strong>Pentágono:</strong> Um polígono com 5 lados, sendo comum na natureza e em construções geométricas.</li>
+    </ul>
+
+    <h2>4. Círculo</h2>
+    <p>O círculo é uma figura especial, caracterizada por uma curva fechada chamada <strong>circunferência</strong>. Ele não possui lados e cada ponto da circunferência está à mesma distância do centro.</p>
+    <ul>
+        <li><strong>Raio (r):</strong> Distância do centro do círculo até qualquer ponto da borda.</li>
+        <li><strong>Diâmetro (d):</strong> Distância entre dois pontos opostos da borda, passando pelo centro (equivalente a 2 vezes o raio).</li>
+    </ul>
+
+    <h2>5. Perímetro e Área</h2>
+    <p>O <strong>perímetro</strong> é a medida do contorno de uma figura. No caso de polígonos, é a soma de todos os lados; no círculo, é a circunferência. A <strong>área</strong> representa o espaço interno de uma figura e cada tipo possui uma fórmula específica para o cálculo:</p>
+
+    <h3>Fórmulas de Área e Perímetro:</h3>
+    <ul>
+        <li><strong>Retângulo:</strong> Perímetro: <em>P = 2 × (base + altura)</em>, Área: <em>A = base × altura</em></li>
+        <li><strong>Triângulo:</strong> Área: <em>A = (base × altura) / 2</em></li>
+        <li><strong>Círculo:</strong> Circunferência: <em>C = 2 × π × raio</em>, Área: <em>A = π × raio²</em></li>
+    </ul>
+
+    <div class="example">
+        <h3>Exemplo Prático 1 (Área):</h3>
+        <p>Imagine que você quer pintar uma parede retangular com 5 metros de largura e 3 metros de altura. A área é calculada como:</p>
+        <p><strong>A = base × altura</strong></p>
+        <p><strong>A = 5 m × 3 m = 15 m²</strong></p>
+        <p>Se cada litro de tinta cobre 5 metros quadrados, você precisará de:</p>
+        <p><strong>Quantidade de tinta = 15 / 5 = 3 litros</strong></p>
+    </div>
+
+    <div class="example">
+        <h3>Exemplo Prático 2 (Perímetro):</h3>
+        <p>Suponha que você deseja colocar uma borda de madeira ao redor de um jardim retangular de 7 metros de comprimento e 4 metros de largura. Para calcular o comprimento necessário da borda, podemos usar a fórmula do perímetro:</p>
+        <p><strong>P = 2 × (comprimento + largura)</strong></p>
+        <p>Substituindo os valores:</p>
+        <p><strong>P = 2 × (7 m + 4 m) = 2 × 11 m = 22 m</strong></p>
+        <p>Portanto, você precisará de 22 metros de borda de madeira para cercar todo o jardim.</p>
+    </div>
+
+    <div class="buttons-container">
+        <a href="provamatematica1.html" class="button">Teste sobre geometria plana</a>
+    </div>
+</body>
+</html>
